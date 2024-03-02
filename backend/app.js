@@ -18,7 +18,7 @@ app.use(cors({
 }));
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://sumanbhawna11:DNt1VxI24qwg55Ns@clustere.kinkrie.mongodb.net/?retrywrites=true&w=majority', {
+mongoose.connect('mongodb+srv://sumanbhawna11:DNt1VxI24qwg55Ns@clustere.kinkrie.mongodb.net/test?retrywrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
