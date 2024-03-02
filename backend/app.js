@@ -11,11 +11,12 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(express.json());
-app.use(cors({
-  origin: ['https://new-react-app-frontend.vercel.app'], // Add your frontend URLs here
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-  credentials: true, // Enable credentials (cookies, authorization headers, etc.)
-}));
+app.use(cors());
+// app.use(cors({
+//   origin: ['https://new-react-app-frontend.vercel.app'], // Add your frontend URLs here
+//   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+//   credentials: true, // Enable credentials (cookies, authorization headers, etc.)
+// }));
 
 // Connect to MongoDB
 mongoose.connect('mongodb+srv://padmaraj:Kore@0808@padmaraj.diigerz.mongodb.net/padmaraj?retryWrites=true&w=majority&appName=Padmaraj', {
@@ -32,12 +33,12 @@ mongoose.connect('mongodb+srv://padmaraj:Kore@0808@padmaraj.diigerz.mongodb.net/
 
 // const User = mongoose.model('User', userSchema);
 // Registration endpoint
-app.options('/register', (req, res) => {
-  res.setHeader('Access-Control-Allow-Origin', 'https://new-react-app-frontend.vercel.app');
-  res.setHeader('Access-Control-Allow-Methods', 'POST');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-  res.status(200).send();
-});
+// app.options('/register', (req, res) => {
+//   res.setHeader('Access-Control-Allow-Origin', 'https://new-react-app-frontend.vercel.app');
+//   res.setHeader('Access-Control-Allow-Methods', 'POST');
+//   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+//   res.status(200).send();
+// });
 
 // Registration endpoint
 app.post('/register', async (req, res) => {
