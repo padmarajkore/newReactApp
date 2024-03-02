@@ -1,0 +1,112 @@
+/* LoginPage.css */
+.login-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sky-blue-section {
+    flex: 1;
+    background-color: skyblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+div.sky-blue-section img {
+  max-width: 70%; /* Adjust the percentage to make the image smaller */
+  height: auto;
+}
+
+.sky-blue-section p {
+  color: white; /* Set the text color to white */
+  margin-top: -5px;
+}
+
+
+  
+  .login-content {
+    flex: 1;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    margin-top: 50px; /* Add margin to the top */
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+  
+  .input-group {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .input-icon {
+    margin-right: 0px;
+  }
+  
+  input {
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    
+  }
+  
+  .toggle-password {
+    cursor: pointer;
+  }
+
+button.login-button {
+  width: 30%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: white;
+  color: blue; /* Update to the desired blue color */
+  border: 2px solid blue; /* Blue border */
+  cursor: pointer;
+  border-top-right-radius: 15px; /* Circular border on the top-right */
+  border-bottom-right-radius: 15px; /* Circular border on the bottom-right */
+  border-top-left-radius: 15px; /* Circular border on the top-left */
+  border-bottom-left-radius: 15px; 
+}
+
+  
+.register-section {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /* Take full width */
+}
+  
+
+
+.login-container {
+  position: relative;
+}
+
+.register-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.register-modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+

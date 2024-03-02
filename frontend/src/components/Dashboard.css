@@ -1,0 +1,126 @@
+/* Dashboard.css */
+
+.dashboard-container {
+    display: flex;
+    height: 100vh; /* Set height to 100% of the viewport height */
+  }
+  
+  .sidebar {
+    width: 200px;
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .logout-option:hover {
+    background-color: #ffe6e6; /* Add a background color on hover for visual feedback */
+  }
+  
+
+  .logo {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+  
+  .icon {
+    margin-right: 10px;
+    font-size: 1.2em;
+  }
+  
+  .option-text {
+    font-size: 1.2em;
+  }
+  
+  .logout-option {
+    margin-top: auto;
+    color: #ff5555;
+    cursor: pointer; /* Add this line to set the cursor to pointer */
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Occupy full height of dashboard-container */
+  }
+  
+  .welcome {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+  }
+  
+  .date {
+    text-align: right;
+    margin-bottom: 15px;
+    color: #666666;
+  }
+  
+  /* .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+    margin-bottom: 15px;
+  } */
+
+  .sidebar-option.selected {
+    background-color: #e6e6e6; /* Change the background color for the selected option */
+  }
+
+  .title {
+    font-size: 1em;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between; /* Add this to align filter to the right */
+  }
+
+  .title-text {
+    font-size: 2em; /* Set the font size for "Board" text */
+  }
+  
+  .board-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1; /* Occupy remaining space in main-content */
+  }
+  
+  .board-block {
+  position: relative; /* Add this line */
+  width: calc(25% - 10px);
+  margin: 5px;
+  background-color: #a0c8e0;
+}
+  
+  .filter {
+    margin-top: 15px;
+  }
+  
+  .filter-label {
+    font-size: 1.2em;
+    margin-right: 10px;
+  }
+  
+  .filter-select {
+    padding: 5px;
+    font-size: 1em;
+  }
+
+.board-block .block-title {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 0.8em;
+  color: #333;
+}
+  

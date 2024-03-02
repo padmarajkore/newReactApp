@@ -1,0 +1,167 @@
+/* RegistrationPage.css
+.registration-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sky-blue-section {
+    flex: 1;
+    background-color: skyblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .registration-content {
+    flex: 1;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+  
+  .input-group {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .input-icon {
+    margin-right: 10px;
+  }
+  
+  input {
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .toggle-password {
+    cursor: pointer;
+  }
+  
+  button {
+    width: 20%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .login-section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+   */
+/* RegistrationPage.css */
+.registration-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sky-blue-section {
+  flex: 1;
+  background-color: skyblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.registration-content {
+  flex: 1;
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 1px 0;
+}
+
+.input-icon {
+  margin-right: 10px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+/* RegistrationPage.css */
+
+button.register-button {
+  width: 30%;
+  padding: 10px;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 0px;
+  background-color: blue; /* Update to the desired blue color */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-top-left-radius: 15px; /* Circular border on the top-left */
+  border-bottom-left-radius: 15px; /* Circular border on the bottom-left */
+  border-top-right-radius: 15px; /* Circular border on the top-right */
+  border-bottom-right-radius: 15px; 
+}
+
+
+.login-section {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
