@@ -41,7 +41,7 @@ app.post('/register', async (req, res) => {
     // console.log('Hashed password:', hashedPassword);
 
 
-    const user = new User({ neme, email, password });
+    const user = new User({ name, email, password });
 
     await user.save();
     res.status(201).json({ message: 'User registered successfully' });
