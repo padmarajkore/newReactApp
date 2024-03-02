@@ -30,7 +30,7 @@ const RegistrationPage = () => {
         return;
       }
 
-      const response = await fetch('https://backend1-5mgwfmoyp-padamarajs-projects.vercel.app/register', {
+      const response = await fetch('https://new-react-app-api.vercel.app/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

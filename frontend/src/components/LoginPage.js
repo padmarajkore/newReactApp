@@ -30,7 +30,7 @@ const LoginPage = () => {
       // Construct the endpoint based on the button clicked
       const authEndpoint = endpoint || '/login';
 
-      const response = await fetch(`https://backend1-5mgwfmoyp-padamarajs-projects.vercel.app{authEndpoint}`, {
+      const response = await fetch(`https://new-react-app-api.vercel.app{authEndpoint}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
