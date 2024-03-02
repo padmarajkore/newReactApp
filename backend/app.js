@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 5000;
 
 app.use(express.json());
 app.use(cors({
-  origin: ['https://new-react-app-frontend.vercel.app', 'https://new-react-app-frontend.vercel.app/register', 'https://new-react-app-frontend.vercel.app/'], // Add your frontend URLs here
+  origin: ['https://new-react-app-frontend.vercel.app',], // Add your frontend URLs here
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true, // Enable credentials (cookies, authorization headers, etc.)
 }));
