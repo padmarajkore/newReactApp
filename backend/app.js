@@ -31,6 +31,13 @@ mongoose.connect('mongodb+srv://sumanbhawna11:DNt1VxI24qwg55Ns@clustere.kinkrie.
 // });
 
 // const User = mongoose.model('User', userSchema);
+// Registration endpoint
+app.options('/register', (req, res) => {
+  res.setHeader('Access-Control-Allow-Origin', 'https://new-react-app-frontend.vercel.app');
+  res.setHeader('Access-Control-Allow-Methods', 'POST');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  res.status(200).send();
+});
 
 // Registration endpoint
 app.post('/register', async (req, res) => {
