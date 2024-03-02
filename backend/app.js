@@ -18,7 +18,7 @@ app.use(cors({
 }));
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://sumanbhawna11:DNt1VxI24qwg55Ns@clustere.kinkrie.mongodb.net/test?retrywrites=true&w=majority', {
+mongoose.connect('mongodb+srv://padmaraj:Kore@0808@padmaraj.diigerz.mongodb.net/padmaraj?retryWrites=true&w=majority&appName=Padmaraj', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -51,7 +51,7 @@ app.post('/register', async (req, res) => {
     const user = new User({ name, email, password });
 
     await user.save();
-    res.status(201).json({ message: 'User registered successfully' });
+    res.status(201).json({ message: 'User registered successfully', user: user });
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: 'Internal server error' });
