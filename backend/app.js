@@ -18,7 +18,7 @@ app.use(cors({
 }));
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/userbase', {
+mongoose.connect('mongodb+srv://sumanbhawna11:DNt1VxI24qwg55Ns@clustere.kinkrie.mongodb.net/?retrywrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -36,12 +36,12 @@ mongoose.connect('mongodb://localhost:27017/userbase', {
 app.post('/register', async (req, res) => {
   try {
     console.log('Received registration request:', req.body);
-    const { name, email, password } = req.body;
+    const { email, password } = req.body;
     // const hashedPassword = await bcrypt.hash(password, 10);
     // console.log('Hashed password:', hashedPassword);
 
 
-    const user = new User({ neme, email, password });
+    const user = new User({ email, password });
 
     await user.save();
     res.status(201).json({ message: 'User registered successfully' });
