@@ -51,7 +51,7 @@ app.post('/register', async (req, res) => {
     const user = new User({ name, email, password });
 
     await user.save();
-    res.status(201).json({ message: 'User registered successfully', user: user });
+    res.status(200).json({ message: 'User registered successfully', user: user });
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: 'Internal server error' });
