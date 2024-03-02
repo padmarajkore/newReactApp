@@ -31,14 +31,13 @@ mongoose.connect('mongodb+srv://padmaraj:Kore@0808@padmaraj.diigerz.mongodb.net/
 //   password: { type: String, required: true },
 // });
 
-// const User = mongoose.model('User', userSchema);
-// Registration endpoint
-// app.options('/register', (req, res) => {
-//   res.setHeader('Access-Control-Allow-Origin', 'https://new-react-app-frontend.vercel.app');
-//   res.setHeader('Access-Control-Allow-Methods', 'POST');
-//   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-//   res.status(200).send();
-// });
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*'); // Allow all origins (unsafe)
+  res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  next();
+});
+
 
 // Registration endpoint
 app.post('/register', async (req, res) => {
